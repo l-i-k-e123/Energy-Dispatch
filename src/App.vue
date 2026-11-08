@@ -1,0 +1,15 @@
+<template>
+  <router-view />
+</template>
+
+<script setup>
+
+</script>
+
+<style>
+#app {
+  width: 100vw;
+  height: 100vh;
+  background: #04080f;
+}
+</style>

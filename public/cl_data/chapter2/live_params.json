@@ -1,0 +1,15 @@
+{
+  "description": "实验结果图表实时演示参数（非论文原始表，为前端动效补充）",
+  "updateIntervalMs": 1000,
+  "windowHint": "在论文基线曲线上叠加周期扰动与轻微噪声，模拟监测波动",
+  "clamp": [0, 1],
+  "algorithms": {
+    "Dijkstra": { "amp": 0.035, "omega": 0.55, "phase": 0.0, "noise": 0.008 },
+    "DQN": { "amp": 0.028, "omega": 0.62, "phase": 0.7, "noise": 0.007 },
+    "PPO": { "amp": 0.025, "omega": 0.48, "phase": 1.4, "noise": 0.006 },
+    "PPO+DP": { "amp": 0.018, "omega": 0.4, "phase": 2.1, "noise": 0.004 },
+    "SEA": { "amp": 0.04, "omega": 0.7, "phase": 2.8, "noise": 0.01 }
+  },
+  "pointPhaseStep": 0.35,
+  "formula": "live[i] = clamp( base[i] * (1 + amp*sin(omega*t + phase + i*pointPhaseStep)) + noise*sin(2.3*omega*t + i), 0, 1 )"
+}

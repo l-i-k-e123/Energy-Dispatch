@@ -1,0 +1,76 @@
+{
+  "groups": [
+    {
+      "id": "fleet",
+      "title": "车数量影响",
+      "desc": "图4 · 公共巴士/车辆数量 25→200",
+      "charts": [
+        "fleet_energy",
+        "fleet_time",
+        "fleet_alloc"
+      ]
+    },
+    {
+      "id": "init",
+      "title": "初始电量影响",
+      "desc": "图5 · 初始电量 1.0→1.7 kWh",
+      "charts": [
+        "init_energy",
+        "init_time"
+      ]
+    },
+    {
+      "id": "deadline",
+      "title": "截止时间影响",
+      "desc": "图6 · 截止时间 1.0→1.7 h",
+      "charts": [
+        "deadline_energy",
+        "deadline_time"
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "fleet_energy",
+      "file": "fleet_energy.json",
+      "title": "能量占比 vs 车数量",
+      "group": "fleet"
+    },
+    {
+      "id": "fleet_time",
+      "file": "fleet_time.json",
+      "title": "时间占比 vs 车数量",
+      "group": "fleet"
+    },
+    {
+      "id": "init_energy",
+      "file": "init_energy.json",
+      "title": "能量占比 vs 初始电量",
+      "group": "init"
+    },
+    {
+      "id": "init_time",
+      "file": "init_time.json",
+      "title": "时间占比 vs 初始电量",
+      "group": "init"
+    },
+    {
+      "id": "deadline_energy",
+      "file": "deadline_energy.json",
+      "title": "能量占比 vs 截止时间",
+      "group": "deadline"
+    },
+    {
+      "id": "deadline_time",
+      "file": "deadline_time.json",
+      "title": "时间占比 vs 截止时间",
+      "group": "deadline"
+    },
+    {
+      "id": "fleet_alloc",
+      "file": "fleet_alloc.json",
+      "title": "路径分配率 vs 车数量",
+      "group": "fleet"
+    }
+  ]
+}
